@@ -1,0 +1,85 @@
+wsssbody {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Georgia', serif;
+}
+
+.container {
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.search-bar {
+    margin: 20px auto; /* Center align horizontally */
+    width: 1000px; /* Set your preferred width */
+    max-width: 1000px; /* Set the desired maximum width */
+    height: 30px; /* Set your preferred height */
+    /* You can adjust other styles as needed */
+    padding: 50px;
+}
+
+.profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 0;
+}
+
+.bubble-row {
+    background-color: #dfe6e9;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble-row div {
+    flex: 1;
+    text-align: center;
+    padding: 10px; /* Decrease padding for spacing */
+    font-size: 18px; /* Increase font size */
+}
+
+.btn-primary, .btn-danger {
+    border-radius: 40px;
+    width: 250px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+    border-color: #bd2130;
+}
+
+.page-heading {
+    color: #ffcc00;
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #FF5733;
+}
+
