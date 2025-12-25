@@ -1,6 +1,19 @@
-# Faculty Management System (FMS) - Student ID Card Management
+# Faculty Management System (FMS) – Student ID Card Management
 
-A comprehensive web-based system for managing student information and generating ID cards for faculty administration. Built with PHP, MySQL, and Bootstrap for a modern, responsive interface.
+🎓 **First Year Academic Project**
+
+This project was developed as part of a **1st Year undergraduate academic requirement** at the Faculty of Technology, University of Sri Jayewardenepura.
+The system is designed to manage student information and generate student ID cards for faculty administrative use.
+
+🚫 **This project is NOT intended for public distribution, reuse, or commercial use.**
+
+## 🛠️ Project Contribution
+
+This was a first-year group project. My initial contribution focused on developing the frontend of the system.  
+After the group submission, I further modified and enhanced the project by implementing barcode functionality for student ID card generation and adding full CRUD (Create, Read, Update, Delete) operations to improve the admin section.  
+
+These enhancements allow administrators to easily manage student records and re-download or re-print student ID cards in case an ID card is lost.
+
 
 ## 🚀 Features
 
@@ -57,43 +70,6 @@ Before running this application, make sure you have:
 - **MySQL**: Version 5.6 or higher
 - **Web Browser**: Modern browser (Chrome, Firefox, Safari, Edge)
 
-## 🔧 Installation
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/faculty-management-system.git
-cd faculty-management-system
-```
-
-### 2. Database Setup
-1. Create a new MySQL database named `FMS`
-2. Import the database schema:
-   ```sql
-   -- Run the contents of setup.sql in your MySQL database
-   ```
-
-### 3. Configuration
-1. Update database connection settings in `Include PHP/database_connection.php`:
-   ```php
-   $servername = "localhost";
-   $username = "your_db_username";
-   $password = "your_db_password";
-   $dbname = "FMS";
-   ```
-
-2. Ensure the following directories are writable:
-   - `profile/` - For student profile images
-   - `Student_Registration/barcodes/` - For generated barcodes
-
-### 4. Web Server Configuration
-Place the project files in your web server's document root (e.g., `htdocs` for XAMPP).
-
-### 5. Access the Application
-Open your browser and navigate to:
-```
-http://localhost/faculty-management-system/
-```
-
 ## 📖 Usage
 
 ### Admin Login
@@ -123,26 +99,6 @@ http://localhost/faculty-management-system/
 1. **Generate ID Card**: Automatic during registration
 2. **Print ID Card**: Click the print icon next to any student
 3. **View ID Card**: ID cards open in a new tab for printing
-
-## 🗄️ Database Schema
-
-The system uses a single `student` table with the following structure:
-
-```sql
-CREATE TABLE student (
-    REGNO VARCHAR(20) PRIMARY KEY,
-    INDEXNO VARCHAR(20),
-    FIRSTNAME VARCHAR(50),
-    LASTNAME VARCHAR(50),
-    GENDER VARCHAR(10),
-    BATCH VARCHAR(20),
-    DEPARTMENT VARCHAR(10),
-    EMAIL VARCHAR(100),
-    PHONENUMBER VARCHAR(15),
-    IMAGE VARCHAR(255),
-    BARCODE VARCHAR(255)
-);
-```
 
 ## 📁 Project Structure
 
@@ -194,21 +150,17 @@ faculty-management-system/
 - **File Upload Validation**: Image uploads are validated for type and size
 - **Access Control**: Protected routes require authentication
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
-## 📝 License
+## 📝 Academic Use Notice
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is strictly developed for **academic purposes only**.
 
-## 📞 Support
+- Not open-source  
+- Not intended for public downloading or reuse  
+- Not permitted for commercial or production use  
+- Redistribution without permission is prohibited
 
-For support, email support@fms.edu or create an issue in this repository.
 
 ## 🙏 Acknowledgments
 
@@ -217,6 +169,4 @@ For support, email support@fms.edu or create an issue in this repository.
 - Font Awesome for the icon set
 - All contributors and users of this system
 
----
 
-**Note**: This system is designed for educational institutions to manage student ID cards efficiently. Ensure proper backup of the database and uploaded files regularly.
